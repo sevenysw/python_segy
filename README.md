@@ -1,16 +1,16 @@
-#Seismic data sample generation
+# Seismic data sample generation
 Based on pytorch
-##Introduction
+## Introduction
 - This code is used to generate sample data from .segy seismic data  for deep learning based on pytorch.
 - It can be used for denoising or interpolation for seismic data.
 - This code is modified from [KaiZhang](https://github.com/cszn/DnCNN/tree/master/TrainingCodes/dncnn_pytorch).
 ## Prerequisites
 - Python3 with dependencies: scipy, numpy, h5py, glob,
 [pytorch](https://github.com/pytorch/pytorch) and [segyio](https://github.com/equinor/segyio)
-##Datasets
+## Datasets
 - you own **.segy** or **.sgy** seismic data or you can download some **.segy** or **.sgy** data online by the code we provide
 - the model we provided is trained with [Model94_shots](http://s3.amazonaws.com/open.source.geoscience/open_data/bpmodel94/Model94_shots.segy.gz) and [7m_shots_0201_0329](http://s3.amazonaws.com/open.source.geoscience/open_data/bpstatics94/7m_shots_0201_0329.segy.gz) dataset (mode: DNCNN)
-##Generating training data
+## Generating training data
 ### 
 
 
@@ -71,14 +71,14 @@ Parameters in **datagenerator** :
 ![](https://wx2.sinaimg.cn/mw1024/006ceorLly1g3209sozzwj30dz03iq59.jpg)
 ![](https://wx2.sinaimg.cn/mw1024/006ceorLly1g3209sr780j30dz03igoc.jpg)
 
-##Training
+## Training
 	python main_train_denoise.py --data_dir data/train
 	python main_train_inter.py --data_dir data/train
 
 (Note: we suppose you have put the "segy" files in the "data/train" folder. If not, please use --download True --datasets 2 (2 means you want to use 2 datasets in the default library). Sometimes the network is not stable and the datasets cannot be downloaded. We provide a baiduyun link for some datasets here, link：https://pan.baidu.com/s/1VuRC40rugaoD2-hRzC1cbQ 
 code：x0nq)
 
-##Test
+## Test
 	python main_test_denoise.py --data_dir data/test --sigma 50
 ![](https://wx3.sinaimg.cn/mw1024/006ceorLly1g31rqu5c7zj316y0bvng0.jpg)
 
@@ -86,7 +86,7 @@ code：x0nq)
 ![](https://wx4.sinaimg.cn/mw1024/006ceorLly1g31rqtq162j316w0c7aqa.jpg)
 
 
-##Future work
+## Future work
 - For more tasks: salt body classification、wave equation inversion and test for field data
 - Parallel computing
 - Support for matconvnet
