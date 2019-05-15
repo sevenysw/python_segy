@@ -1,5 +1,8 @@
 # Seismic data sample generation
-Based on pytorch
+Based on pytorch 
+By Jing Wang and Siwei Yu
+Center of Geophysics, Harbin Insititute of Technology, Harbin, China
+
 ## Introduction
 - This code is used to generate sample data from .segy seismic data  for deep learning based on pytorch.
 - It can be used for denoising or interpolation for seismic data.
