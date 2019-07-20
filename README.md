@@ -5,6 +5,12 @@ By Jing Wang and Siwei Yu
 
 Center of Geophysics, Harbin Insititute of Technology, Harbin, China
 
+If you find this toolbox useful, please cite the following paper (accepted by Geophysics):
+
+(Deep learning for denoising) https://arxiv.org/abs/1810.11614
+
+Note that the results from examples of this toolbox are not identical to those in the paper. The training set, test set, programming language are different. 
+
 ## Introduction
 - This code is used to generate sample data from .segy seismic data  for deep learning based on pytorch.
 - It can be used for denoising or interpolation for seismic data.
