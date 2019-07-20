@@ -1,7 +1,7 @@
 # Seismic data sample generation
 Based on pytorch 
 
-By Jing Wang and Siwei Yu
+By Jing Wang and Siwei Yu (siweiyu@hit.edu.cn)
 
 Center of Geophysics, Harbin Insititute of Technology, Harbin, China
 
