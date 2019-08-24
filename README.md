@@ -86,8 +86,7 @@ Parameters in **datagenerator** :
 	python main_train_denoise.py --data_dir data/train
 	python main_train_inter.py --data_dir data/train
 
-(Note: we suppose you have put the "segy" files in the "data/train" folder. If not, please use --download True --datasets 2 (2 means you want to use 2 datasets in the default library). Sometimes the network is not stable and the datasets cannot be downloaded. We provide a baiduyun link for some datasets here, link：https://pan.baidu.com/s/1VuRC40rugaoD2-hRzC1cbQ 
-code：x0nq)
+(Note: we suppose you have put the "segy" files in the "data/train" folder. If not, please use --download True --datasets 2 (2 means you want to use 2 datasets in the default library). Sometimes the network is not stable and the datasets cannot be downloaded. We provide a baiduyun link for some datasets here, link：https://pan.baidu.com/s/1YBO8-GOvk6JJGQZSKBdgJg)
 
 ## Test
 	python main_test_denoise.py --data_dir data/test --sigma 50
